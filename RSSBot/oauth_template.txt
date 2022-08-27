@@ -1,18 +1,20 @@
 # Rename this file to oauth.ini
 
 [app]
-scope=submit
+scope=identity,account,edit,flair,history,livemanage,modconfig,modflair,modlog,modothers,modposts,modself,modwiki,mysubreddits,privatemessages,read,report,save,submit,subscribe,vote,wikiedit,wikiread
 refreshable=True
 app_key=thisistheid
 app_secret=ThisIsTheSecretDoNotShare
 
 [server]
-server_mode=False
+server_mode=True
 url=127.0.0.1
 port=65010
 redirect_path=authorize_callback
 link_path=oauth
 
+# Will be filled automatically
 [token]
 token=None
 refresh_token=None
+valid_until=0
